@@ -1,0 +1,28 @@
+body {
+
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    
+    font-size: 26px;
+    background-color: #fff;
+    line-height: 1.2;
+   
+    
+  }
+
+  p {
+    color:#000;
+
+  }
+
+
+  a {
+      text-decoration:none;
+      color:#000;
+  }
+
+  div.about{
+    width: 600px;
+    padding: 10px;
+  }

@@ -4,22 +4,58 @@
 @import "base.css";
 
 body {
-    font-family: Quicksand;
+
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    
     font-size: 26px;
-    background-color: #fff;
+    background-color: #000;
     line-height: 1.2;
+    background-image: url("back.jpg");
+    background-size:cover;
+    
   }
+
+
 
   h1 {
       color:#fff;
       font-size:120px;
   }
 
+  p {
+    color:#000;
+
+  }
+
+  /* update section - message re website construciton */
+
+  div.update {
+    width: 450px;
+    background-size: cover;
+    background-color: #000000a8;
+    padding:5px;
+    margin-top:40px;
+
+  }
+
+  h2 {
+      color:red;
+      font-size:22px;
+      
+  }
+
+
+
 
 a {
     text-decoration:none;
-   
+    cursor:pointer;
+  
 }
+
+
 
 header {
     position: relative;
@@ -30,36 +66,43 @@ header {
     padding:20px
 }
 
-header a {
-    font-size:46px;
-    color:#fff;
 
-   
-    
-}
 
 header nav {
-    width:200px;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+
+
+.links {
+    padding:30px;
+}
+
+.links img {
+    width:50px;
+    margin:20px;
 }
 
 
 
 .intro_page {
-   
    position:fixed;
    top:0;
    left:0
 }
 
 
-.video_content {
-    position:relative;
-    right:-50px;
+.website-links nav a {
+    color:#fff;
+    font-size:36px;
+    line-height:1.5;
     
-}
 
 
-.video_content video {
-    outline:none;
 }
+
 
