@@ -26,7 +26,6 @@ body {
 
   p {
     color:#000;
-
   }
 
   /* update section - message re website construciton */
@@ -37,13 +36,11 @@ body {
     background-color: #000000a8;
     padding:5px;
     margin-top:40px;
-
   }
 
   h2 {
       color:red;
-      font-size:22px;
-      
+      font-size:22px;  
   }
 
 
@@ -88,7 +85,6 @@ header nav {
 }
 
 
-
 .intro_page {
    position:fixed;
    top:0;
@@ -100,9 +96,73 @@ header nav {
     color:#fff;
     font-size:36px;
     line-height:1.5;
-    
+
+}
+
+
+
+@media (max-width: 500px){
+
+
+    header {
+        padding:5px;
+    }
+
+    h1 {
+        font-size:36px;
+    }
+
+
+    h2 {
+    font-size:12px;  
+    }
+
+
+    /* update section - message re website construciton */
+
+  div.update {
+    width: 150px;
+    background-size: cover;
+    background-color: #000000a8;
+    padding:3px;
+    margin-top:10px;
+  }
+
+
+  header nav {
+    width: 250px;
+}
+
+
+body {
+    font-size: 12px;
+}
+
+.website-links nav a {
+    font-size:16px;
+}
+
+header nav {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+
+
+.links {
+    padding:10px;
+}
+
+.links img {
+    width:25px;
+    margin:10px;
+}
 
 
 }
+
 
 
