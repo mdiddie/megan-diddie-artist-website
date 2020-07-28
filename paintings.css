@@ -1,0 +1,48 @@
+body {
+
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    
+    font-size: 16px;
+    background-color: #000;
+    line-height: 1.2;
+  }
+
+
+  h1 {
+    text-decoration:none;
+    color:#000;
+}
+
+div.paintings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+div.paintings img {
+    width:500px;
+    padding:20px
+}
+
+footer {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1;
+}
+
+footer a  img{
+    padding:30px;
+    height:100px;
+}
