@@ -3,6 +3,26 @@
 @import "font.css";
 @import "base.css";
 
+
+@font-face {
+    font-family: "Faune";
+    font-weight: 400;
+    src: url(faune-regular.woff2), url(faune-regular.woff);
+  }
+  
+  @font-face {
+    font-family: "Faune";
+    font-weight: 400;
+    font-style: italic;
+    src: url(faune-italic.woff2), url(faune-italic.woff);
+  }
+  
+  @font-face {
+    font-family: "Faune";
+    font-weight: 700;
+    src: url(faune-bold.woff2), url(faune-bold.woff);
+  }
+
 body {
 
     font-family: aktiv-grotesk, sans-serif;
@@ -23,6 +43,8 @@ body {
  
 
   h1 {
+      font-family:"faune", sans-serif;
+      font-style:italic;
       color:#fff;
       font-size:90px;
   }
@@ -31,20 +53,6 @@ body {
     color:#000;
   }
 
-  /* update section - message re website construciton */
-
-  div.update {
-    width: 450px;
-    background-size: cover;
-    background-color: #000000a8;
-    padding:5px;
-    margin-top:40px;
-  }
-
-  h2 {
-      color:red;
-      font-size:22px;  
-  }
 
 
 
@@ -52,87 +60,68 @@ body {
 a {
     text-decoration:none;
     cursor:pointer;
-  
 }
 
 
 
 header {
-    /* position: relative;
-    top: 0;
-    left: 0;
-    z-index: 3; */
-
     padding:20px
-   
 }
 
 
 
-header nav {
-    display: flex;
+
+nav.website-links {
     width: 600px;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-  
+    padding:20px;
+    margin-bottom:10px;
+
+    position:fixed;
+    bottom:45px;
+    z-index:2;
+
 }
 
-
-
-nav.links {
-    padding:30px;
-    z-index:10;
-  
-}
-
-nav.links img {
-    width:50px;
-    margin:20px;
-}
-
-
-.intro_page {
-   position:fixed;
-   top:0;
-   left:0
-}
-
-
-.website-links nav a {
+nav.website-links a {
     color:#fff;
-    font-size:36px;
+    font-size:32px;
     line-height:1.5;
+    padding:8px;
+}
+
+
+
+nav.sm-links {
+    position:fixed;
+    bottom:10px;
+    padding:20px;
+    z-index:0;
 
 }
+
+nav.sm-links img {
+    width:30px;
+  margin:10px;
+}
+
+
 
 
 
 @media (max-width: 500px){
 
 
-    header {
+header {
         padding:5px;
     }
 
-    h1 {
-        font-size:36px;
+h1 {
+        font-size:40px;
+        padding:20px;
     }
-
-
-    h2 {
-    font-size:12px;  
-    }
-
-
-    /* update section - message re website construciton */
-
-  div.update {
-    width: 150px;
-    background-size: cover;
-    background-color: #000000a8;
-    padding:3px;
-    margin-top:10px;
-  }
 
 
   header nav {
@@ -141,17 +130,17 @@ nav.links img {
 
 
 body {
-    font-size: 12px;
+    font-size: 18px;
 }
 
-.website-links nav a {
-    font-size:16px;
-    padding-left:10px;
+nav.website-links a {
+    font-size: 26px;
 }
 
-header nav {
+
+nav.website-links{
     display: inline-block;
-    width: 100px;
+   width: 300px;
   
 }
 
