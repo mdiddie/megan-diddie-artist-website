@@ -70,6 +70,7 @@ header {
 }
 
 
+
 section nav.website-links {
     width: 600px;
     margin-right: auto;
@@ -135,6 +136,10 @@ h2 {
     header {
         margin-bottom:300px
     }
+
+    body {
+        padding-top:20px;
+    }
 }
 
 
@@ -150,6 +155,10 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom:60px;
+    }
+
+    body {
+        padding-top:10px;
     }
 
 
