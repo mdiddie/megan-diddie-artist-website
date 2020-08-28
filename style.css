@@ -83,7 +83,6 @@ section nav.website-links {
 }
 
 section nav.sm-links {
-    
     display:flex;
     align-items: center;
     justify-content: space-evenly;

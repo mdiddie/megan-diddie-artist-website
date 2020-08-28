@@ -15,6 +15,11 @@ body {
     color:#000;
 }
 
+h2 {
+  color:#ffffff;
+  font-size:10px;
+}
+
 div.paintings {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +36,8 @@ div.paintings {
 }
 
 div.paintings img {
-    width:500px;
+   max-width:500px;
+   
     padding:20px
 }
 
