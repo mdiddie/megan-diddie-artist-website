@@ -20,6 +20,13 @@ h2 {
   font-size:10px;
 }
 
+p {
+  color:#ffffff;
+  font-size:12px;
+  padding-left:20px
+
+}
+
 div.paintings {
     display: flex;
     flex-wrap: wrap;
@@ -37,8 +44,7 @@ div.paintings {
 
 div.paintings img {
    max-width:500px;
-   
-    padding:20px
+    padding:20px 20px 0 20px;
 }
 
 footer {
@@ -52,4 +58,29 @@ footer {
 footer a  img{
     padding:30px;
     height:100px;
+}
+
+@media (max-width: 500px) {
+
+  body {
+    margin-top:50px;
+  }
+
+  div.paintings {
+    display: block;
+    align-items: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  
+}
+
+footer a  img{
+  padding: 0;
+  height:80px;
+}
+
+  
+    
 }
