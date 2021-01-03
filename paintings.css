@@ -43,8 +43,9 @@ div.paintings {
 }
 
 div.paintings img {
-   max-width:500px;
-    padding:20px 20px 0 20px;
+   width:500px;
+    /* padding:20px 20px 0 20px; */
+    margin:20px;
 }
 
 footer {
@@ -66,7 +67,7 @@ footer a  img{
     margin-top:50px;
   }
 
-  div.paintings {
+  /* div.paintings {
     display: block;
     align-items: center;
     max-width: 100%;
@@ -74,7 +75,7 @@ footer a  img{
     margin-right: auto;
     padding: 10px;
   
-}
+} */
 
 footer a  img{
   padding: 0;
