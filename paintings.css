@@ -23,8 +23,9 @@ h2 {
 p {
   color:#ffffff;
   font-size:12px;
-  padding-left:20px
-
+  padding-left:20px;
+  margin-top:2px;
+ 
 }
 
 div.paintings {
@@ -44,8 +45,7 @@ div.paintings {
 
 div.paintings img {
    width:500px;
-    /* padding:20px 20px 0 20px; */
-    margin:20px;
+    margin:15px 15px 0px 15px;
 }
 
 footer {
