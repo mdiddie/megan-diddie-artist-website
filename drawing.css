@@ -1,11 +1,10 @@
 body {
-
+   
     font-family: aktiv-grotesk, sans-serif;
     font-style: normal;
     font-weight: 200;
     
     font-size: 16px;
-    background-color: rgba(150, 137, 137, 0.363);
     line-height: 1.2;
   }
 
@@ -27,25 +26,64 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.drawings {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-   
-  
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    padding: 20px;
-   
+section {
+  background-color: rgba(150, 137, 137, 0.363);
+  min-height: 100vh;
+  padding: 20px;
+ 
+}
+
+
+
+section.drawing2 {
+  /* background-color:rgba(41, 64, 87, 0.781); */
+  background-color:rgb(34, 33, 33);
+
+}
+
+section div.drawings {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items:center;
+
+  max-width:100%;
+  margin-left: auto;
+  margin-right: auto;
+    
     
 }
 
+
+
 div.drawings img {
-   max-width:500px;
-   margin:10px;
-   box-shadow : 5px 5px 5px #cc49446c;
+  max-width:500px;
+  box-shadow : 5px 5px 5px #cc49446c;
+}
+
+
+section.drawing2 div.drawings img {
+
+  height:auto;
+  box-shadow : 5px 5px 5px #3438466c;
+  
+ 
+}
+
+section.drawing2 div.coloredpencil1 img{
+  max-width:700px;
+  height:auto;
+}
+
+section.drawing2 div.coloredpencil2 img{
+  max-width:650px;
+  height:auto;
+}
+
+
+section.drawing2 p {
+  color: #fff;
 }
 
 footer {
@@ -62,12 +100,10 @@ footer a  img{
 }
 
 
-@media (max-width: 500px) {
-    body {
-        margin-top:50px;
-      }
+@media (max-width: 1000px) {
+
     
-      div.drawings {
+      section div.drawings {
         display: block;
         align-items: center;
         max-width: 100%;
@@ -76,10 +112,34 @@ footer a  img{
         padding: 10px;
       
     }
+
+
+
+
+
+    div.drawings img {
+      max-width:100%;
+    }
+
+
+
+
+    section.drawing2 div.drawings img {
+      max-width:100%;
+    }
+    
+    section.drawing2 div.coloredpencil1 img{
+      max-width:100%;
+    }
+    
+    section.drawing2 div.coloredpencil2 img{
+      max-width:100%;
+    }
+
     
     footer a  img{
       padding: 0;
       height:80px;
     }
-    
+     
 }

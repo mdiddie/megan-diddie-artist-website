@@ -1,3 +1,32 @@
+
+@import "font.css";
+@import "base.css";
+
+
+@font-face {
+    font-family: "Faune";
+    font-weight: 400;
+    src: url(faune-regular.woff2), url(faune-regular.woff);
+  }
+  
+  @font-face {
+    font-family: "Faune";
+    font-weight: 400;
+    font-style: italic;
+    src: url(faune-italic.woff2), url(faune-italic.woff);
+  }
+  
+  @font-face {
+    font-family: "Faune";
+    font-weight: 700;
+    src: url(faune-bold.woff2), url(faune-bold.woff);
+  }
+
+
+
+
+
+
 body {
 
     font-family: aktiv-grotesk, sans-serif;
@@ -7,80 +36,158 @@ body {
     font-size: 16px;
     background-color: rgba(83, 107, 87, 0.507);
     line-height: 1.2;
+   
+  }
+
+  a {
+    text-decoration:none;
+    color:rgb(252, 8, 130);
+    font-weight:700;
+
   }
 
 
   h1 {
+    font-size:13px;
     text-decoration:none;
     color:#000;
+    text-decoration:none;
 }
 
-h2 {
-  color:#ffffff;
-  font-size:10px;
+span {
+  font-family:"faune", sans-serif;
+  font-style:italic;
+  color:rgb(252, 8, 130);
+  font-size:30px;
 }
 
-p {
-  color:#8f6238;
-  font-size:18px;
-  padding-left:20px;
-  font-weight:700;
+
+
+.wrapper {
+
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap:10px;
+  padding:20px;
+
+  /* grid-auto-rows:minmax(100px, auto); */
+ 
+}
+
+
+
+.a  {
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 3;
+
+  /* background-color:#fff;
+  width:100px;
+  height:100px; */
+}
+
+.a img {
+  width:500px;
 
 }
 
-div.sculptures {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-   
+.a h1 {
+  padding-top:15px;
+}
+
+
+.text {
+  grid-row: 1/span 1;
+  grid-column: 1 /span 1;
+}
+
+
+div.gif h1 {
+  padding-top:10px;
+  font-size:16px;
   
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    padding-left: 20px;
-    padding-right: 20px;
-    
 }
 
-div.sculpture img {
-   max-width:500px;
-    padding:20px 20px 0 20px;
+.gif {
+  grid-row: 4/ span 1;
+  grid-column: 1 / span 1;
+  padding:10px;
+  width:500px;
+}
+
+.gif2 {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 1;
+    padding:10px;
+    width:500px;
+  }
+
+
+
+.book {
+  grid-row: 4/ span 1;
+  grid-column: 2 / span 3;
+  width:500px;
+  
+}
+
+.book2 {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  width:500px;
+
+}
+
+.book img {
+  padding-bottom:15px;
+
+}
+
+
+.bathroom1 img {
+  width: 300px;
+  padding:10px;
 }
 
 footer {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1;
+  grid-row: 3 /span 2;
+  grid-column: 1 /span 2;
+
 }
+
 
 footer a  img{
     padding:30px;
-    height:100px;
+    height:200px;
 }
 
-@media (max-width: 500px) {
 
-  body {
-    margin-top:50px;
+
+@media (max-width: 700px) {
+
+  .wrapper {
+    display:block;
+
   }
 
-  div.paintings {
-    display: block;
-    align-items: center;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-  
-}
+  .gif {
+    width:100%;
+  }
 
-footer a  img{
-  padding: 0;
-  height:80px;
-}
+  .gif2 {
+    width:100%;
+  }
+
+  .book {
+    width:100%;
+  }
+
+  .bathroom1 {
+    width:100%;
+  }
+
+  .book2 {
+    width:100%;
+  }
 
   
     

@@ -14,7 +14,7 @@ body {
     font-style: normal;
     font-weight: 200;
     
-    font-size: 16px;
+    font-size: 14px;
     background-color: #fff;
     line-height: 1.2;
   }
@@ -23,7 +23,7 @@ body {
   h1 {
 
       text-decoration:none;
-      color:#000;
+      color:#fff;
   }
 
   a {
@@ -48,11 +48,14 @@ body {
 
 
  section div.about {
-   max-width:550px;
+   max-width:625px;
+   background-color:rgba(0, 0, 0, 0.336);
+   padding:20px;
  }
 
  section div.about img {
    width:100px;
+   
  }
 
  section div.profile {
