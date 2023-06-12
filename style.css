@@ -30,6 +30,7 @@ body {
     font-family: aktiv-grotesk, sans-serif;
     font-style: normal;
     font-weight: 200;
+    background-color:#c0b281ca;
     
     font-size: 11px;
     /* background-color: rgba(110, 110, 59, 0.473); */
@@ -45,7 +46,7 @@ body {
 
 
   html {
-    background: url("back.jpg") no-repeat center center fixed;
+    background: url("3.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,7 +58,7 @@ body {
   h1 {
       font-family:"faune", sans-serif;
       font-style:italic;
-      color:#fff;
+      color:#365b4e;
       font-size:90px;
   }
 
@@ -83,8 +84,13 @@ header {
 }
 
 
+section {
+    background-color:#96a450ca;
+}
+
 
 section nav.website-links {
+ 
     width: 900px;
     margin-right: auto;
     margin-left: auto;
@@ -100,11 +106,12 @@ section nav.website-links {
 
 
 section nav.website-links a {
-    color:#fff;
+    color:rgb(150, 13, 68);
     font-size:32px;
     line-height:1.5;
     padding:8px;
     z-index:3;
+    font: weight 200px;;
 
 }
 
@@ -130,22 +137,35 @@ footer h1 {
 }
 
 .hothouselink {
-    /* position: fixed; */
+    position: fixed;
     left: 50px;
-    bottom:100px;
-    /* max-width:300px; */
+    bottom:50px;
+    max-width:30px;
     margin:20px;
   
 }
 
 .hothouselink img {
-    max-width:300px;
+    max-width:100px;
+}
+
+.prairielanternlink {
+    position: fixed;
+    left: 450px;
+    bottom:165px;
+    max-width:30px;
+    margin:20px;
+  
+}
+
+.prairielanternlink img {
+    max-width:100px;
 }
 
 
 footer {
     color: #ffffff;
-    background-color: #000000;
+    background-color: #7e6e3a;
     display: flex;
     justify-content: flex-start;
     align-items:center;
@@ -171,6 +191,34 @@ h2 {
 
     body {
         padding-top:20px;
+    }
+
+    .hothouselink {
+       
+        left: 25px;
+        bottom:100px;
+        max-width:50%;
+        margin:20px;
+      
+    }
+
+    .prairielanternlink {
+        position: fixed;
+        left: 391px;
+        bottom:365px;
+        max-width:20px;
+        margin:20px;
+      
+    }
+
+
+    .hothouselink {
+       
+        left: 115px;
+        bottom:340px;
+        max-width:50%;
+        margin:20px;
+      
     }
 }
 
@@ -223,11 +271,27 @@ header {
 
     .hothouselink {
        
-        left: 50px;
+        left: 25px;
         bottom:100px;
         max-width:50%;
         margin:20px;
       
+    }
+
+
+
+    .prairielanternlink {
+        position: fixed;
+        left: 94px;
+        bottom:237px;
+        max-width:20px;
+        margin:20px;
+      
+    }
+
+
+    .prairielanternlink img {
+        max-width:80px;
     }
 
 
