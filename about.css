@@ -27,7 +27,8 @@ body {
   }
 
   h2 {
-    font-size: 8px;
+    font-size: 11px;
+    color:#fff;
 
   }
 
@@ -61,6 +62,10 @@ body {
  section div.about img {
    width:350px;
    
+ }
+
+section div.aboutarrow img {
+  width: 100px;
  }
 
  section div.profile {
